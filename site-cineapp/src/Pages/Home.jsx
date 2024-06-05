@@ -7,14 +7,14 @@ function Home() {
         
         {data.map(
                 (filme, index) => (
-                    <div className="card" key={index}>
-                        <h1>{filme.title}</h1>
-                        <img src={filme.image}/>
+                    <div className="card m-5" key={index}>
+                        <h1 className="p-2">{filme.title}</h1>
+                        <img className='mb-4' src={filme.image}/>
                         <div className='tags'>
                             {
                                 filme.tags.map( tag => (
-                                    <span className='bg-pink-800 text-white p-1 m-1 ' key={tag}>{tag}</span>
-
+                                    <span className='bg-pink-800 text-white p-1 m-1 ' 
+                                    key={tag}>{tag}</span>
                                     )
                                 )
                             }
