@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return ( 
         <nav>
-            <ul className="flex gap-3">
+            <ul className="text-xl flex gap-6">
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="filmes">Fimes</Link></li>
+                <li><Link to="filmes">Filmes</Link></li>
                 <li><Link to="sobre">Sobre</Link></li>
-                <li><Link to="contato">Contato   </Link></li>
+                <li><Link to="contato">Contato</Link></li>
             </ul>
         </nav>
      );

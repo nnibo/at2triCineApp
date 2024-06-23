@@ -16,10 +16,23 @@ function DetalhesFilmes() {
 
     return (
         <>
-        <h1> Detalhes do Filme</h1>
-        <img src={`https://image.tmdb.org/t/p/w1280/${filme.backdrop_path}`} />
-        <p>{filme.title}</p>
-        <p>{filme.vote_average}</p>
+        <div className="flex flex-col lg:flex-row items-center m-[20px] lg:m-[100px]">
+            <img className="w-[800px] ml-[100px] rounded-lg" src={`https://image.tmdb.org/t/p/w1280/${filme.backdrop_path}`} />
+
+            <div className="flex flex-col ml-[30px]">
+                <h1 className="text-4xl font-bold text-start text-white mb-[20px]">Detalhes do Filme:</h1>
+
+                <div className="text-lg text-start text-white">
+                    <p>{filme.title}</p>
+                    <p>Avaliação {filme.vote_average}</p>
+                </div>
+
+                <p className="text-gray-300 mt-5 mr-[100px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                          galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since. </p>
+            </div>
+        </div>
         </> 
      );
 }

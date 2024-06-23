@@ -48,19 +48,27 @@
         "tags": ["cinema", "desafio", "criação"]
         },
         {
-            "title": "Novidades no mundo do cinema",
-            "image": "deadpool.jpg",
-            "text": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-            ],
-            "tags": ["cinema", "podcast"]
-            },
-            {
-            "title": "Discussões e análises sobre os filmes mais recentes",
-            "image": "joker.png",
-            "text": [
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-            ],
-            "tags": ["cinema", "discord"]
+        "title": "Novidades no mundo do cinema",
+        "image": "deadpool.jpg",
+        "text": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        ],
+        "tags": ["cinema", "podcast"]
+        },
+        {
+        "title": "Discussões e análises sobre os filmes mais recentes",
+        "image": "joker.png",
+        "text": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        ],
+        "tags": ["cinema", "discord"]
+        },
+        {
+        "title": "Desafio de criação cinematográfica",
+        "image": "guerracivil.png",
+        "text": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        ],
+        "tags": ["cinema", "desafio", "criação"]
         }
     ]

@@ -14,18 +14,27 @@ function Filmes() {
 
     },[])
 
-
     return ( 
         <>
-        <h1>Filmes</h1>
-        <div className="listaFilmes flex flex-row gap-3 flex-wrap">
+
+        <div className="w-full h-[800px] mb-[100px]">  
+            <img className="w-full h-full object-cover" src="banner.jpg"/>
+        </div>
+
+        <h1 className="text-4xl font-bold text-center text-white mt-[50px]" >Filmes Disponíveis</h1>
+        <div className="grid grid-cols-5 m-[100px] mt-[35px]">
             {
                 filmes.map(
                     filme => (
-                        <div className="card-filme" key={filmes.id}>
-                            <img src={`https://image.tmdb.org/t/p/w92/${filme.poster_path}`} />
-                            <h1 className="">{filme.title}</h1>
-                            <Link to={`${filme.id}`} className="bg-blue-800">Saiba Mais</Link>
+                        <div className="px-6 py-4"> 
+                            <div className=" max-w-sm rounded-lg " key={filmes.id}>
+
+                                <img className="w-[300px] h-[350px] rounded-lg" src={`https://image.tmdb.org/t/p/w92/${filme.poster_path}`} />
+
+                                <h1 className="text-lg font-medium tracking-tight text-white font-bold m-1 ">{filme.title}</h1>
+
+                                <Link to={`${filme.id}`} className="text-gray-400 m-1">Saiba Mais</Link>
+                            </div>
                         </div>
                     )
                 )
