@@ -28,7 +28,7 @@ function Home() {
 
         <div className='mt-[80px]'>
 
-            <h1 className='text-4xl font-bold text-center text-white mb-[50px]'>Notícias dos Filmes</h1>
+            <h1 className='text-4xl font-bold text-center text-white mb-[55px]'>Notícias dos Filmes</h1>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 m-10'>
                 {data.map((filme, index) => (
