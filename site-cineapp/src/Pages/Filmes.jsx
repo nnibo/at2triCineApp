@@ -47,10 +47,43 @@ function Filmes() {
         ],
     };
 
+    const bannerSliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+    };
+
     return (
         <>
-            <div className="w-full h-[800px] mb-[100px]">
-                <img className="w-full h-full object-cover" src="banner.jpg" alt="Banner" />
+            <div className="w-full h-[800px] mb-[150px]">
+                <Slider {...bannerSliderSettings}>
+                    <div>
+                        <img
+                            className="w-full h-[800px] object-cover"
+                            src="/banner1.jpg"
+                            alt="Banner 1"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            className="w-full h-[800px] object-cover"
+                            src="/banner2.jpg"
+                            alt="Banner 2"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            className="w-full h-[800px] object-cover"
+                            src="/banner3.jpg"
+                            alt="Banner 3"
+                        />
+                    </div>
+                </Slider>
             </div>
 
             <div className="mb-8 mt-[100px]">
