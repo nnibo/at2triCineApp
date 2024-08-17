@@ -43,35 +43,35 @@ function Contato() {
     <div className="flex flex-wrap justify-center items-center p-24 w-[550px]">
         <div className=" flex flex-row ">
             <div className="bg-white w-[180px] h-[220px] mr-10 rounded-xl flex items-center" >
-                <div className="flex flex-col items-center">
-                    <img className="w-10" src="../../public/localizacao.png" alt="" />
-                    <h2 className="text-center">Localizacao</h2>
-                    <h4 className="text-center">A nossa empresa se localiza no ajdkajdl</h4>
+                <div className="flex flex-col items-center ml-3">
+                    <img className="w-10 mb-7" src="../../public/localizacao.png" alt="" />
+                    <h2 className="text-center font-bold p-2">Localizacao</h2>
+                    <h4 className="text-center font-light">Rua Nicolas Baradel 123</h4>
                 </div>
             </div>
 
             <div className="bg-purple-800 w-[180px] h-[220px] rounded-xl flex items-center" >
-            <div className="flex flex-col items-center">
-                    <img className="w-10" src="../../public/telefone.png" alt="" />
-                    <h2 className="text-center text-white">Localizacao</h2>
-                    <h4 className="text-center text-white">A nossa empresa se localiza no ajdkajdl</h4>
+            <div className="flex flex-col items-center ml-12">
+                    <img className="w-10 mb-7" src="../../public/telefone.png" alt="" />
+                    <h2 className="text-center text-white p-2 font-bold">Telefone</h2>
+                    <h4 className="text-center text-white font-light">12345-6789</h4>
                 </div>
             </div>
         </div>
 
         <div className="flex flex-row">
         <div className="bg-purple-800 w-[180px] h-[220px] rounded-xl flex items-center mr-10" >
-            <div className="flex flex-col items-center">
-                    <img className="w-10" src="../../public/telefone.png" alt="" />
-                    <h2 className="text-center text-white">Localizacao</h2>
-                    <h4 className="text-center text-white">A nossa empresa se localiza no ajdkajdl</h4>
+            <div className="flex flex-col items-center ml-1">
+                    <img className="w-10 mb-7" src="../../public/email.png" alt="" />
+                    <h2 className="text-center text-white p-2 font-bold">Email</h2>
+                    <h4 className="text-center text-white font-light"> emailtesteinw@gmail.com</h4>
                 </div>
             </div>
             <div className="bg-white w-[180px] h-[220px] rounded-xl flex items-center" >
-                <div className="flex flex-col items-center">
-                    <img className="w-10" src="../../public/localizacao.png" alt="" />
-                    <h2 className="text-center">Localizacao</h2>
-                    <h4 className="text-center">A nossa empresa se localiza no ajdkajdl</h4>
+                <div className="flex flex-col items-center ml-7">
+                    <img className="w-10 mb-7" src="../../public/internet.png" alt="" />
+                    <h2 className="text-center p-2 font-bold">Nosso Site</h2>
+                    <h4 className="text-center font-light">www.cinext.com.br</h4>
                 </div>
             </div>
         </div>
