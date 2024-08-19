@@ -6,15 +6,27 @@ function Filmes() {
     const [filmesA, setFilmesA] = useState([]);
     const [filmesB, setFilmesB] = useState([]);
     const [search, setSearch] = useState('')
+    const [artigos, setArtigos] = useState(filmesA)
     console.log(search)
+
+    function handleInput(e) {
+        const pesquisa = e.target.value;
+        setSearch(pesquisa);
+
+        const resultados = filmesA.filter(filme =>(
+            filme.title.toLowerCase().includes(pesquisa.toLowerCase())
+        ))
+        console.log(resultados)
+        setArtigos(resultados)
+    }
 
     useEffect(() => {
         fetch('https://api.themoviedb.org/3/movie/popular?api_key=7c572a9f5b3ba776080330d23bb76e1e')
             .then(response => response.json())
             .then(data => {
-                const metade = Math.ceil(data.results.length / 2);
-                setFilmesA(data.results.slice(0, metade));
-                setFilmesB(data.results.slice(metade));
+                //const metade = Math.ceil(data.results.length / 2);
+                setFilmesA(data.results);
+                setFilmesB(data.results);
             })
             .catch(error => console.log(error));
     }, []);
@@ -89,20 +101,20 @@ function Filmes() {
             </div>
 
             <div className="flex justify-center">
-                <input type="search" className="w-[500px] h-[30px] p-4 rounded-3xl" placeholder="Pesquisa..." onChange={(e) => setSearch(e.target.value)} />
+                <input 
+                    type="search" 
+                    className="w-[500px] h-[30px] p-4 rounded-3xl" 
+                    placeholder="Pesquisa..."
+                    value={search} 
+                    onChange={handleInput} />
             </div>
 
             <div className="mb-8 mt-[100px]">
                 <h1 className="text-4xl font-bold text-center text-white mt-3 mb-[40px]">Mais Assistidos</h1>
                 <Slider {...sliderSettings}>
 
-
-                    {/*Ta dando erro aqui */}
-                    {filmesA.filter(filme => {
-                        search.toLowerCase() === '' ? filme : filme.title.toLowerCase().includes(search)
-                    })
-                    
-                    .map(filme => (
+                    { artigos.length >0 ?
+                    artigos.map(filme => (
                         <div className="px-6 py-4" key={filme.id}>
                             <div className="max-w-sm rounded-lg">
                                 <img
@@ -118,7 +130,10 @@ function Filmes() {
                                 </Link>
                             </div>
                         </div>
-                    ))}
+                    ))
+                :
+                <p> Carregando</p>
+                }
                 </Slider>
             </div>
 
